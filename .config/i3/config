@@ -155,13 +155,13 @@ mode "resize" {
         bindsym Up resize shrink height 10 px or 10 ppt
         bindsym Right resize grow width 10 px or 10 ppt
 
-        # back to normal: Enter or Escape or $mod+r
+        # back to normal: Enter or Escape or $mod+t
         bindsym Return mode "default"
         bindsym Escape mode "default"
-        bindsym $mod+r mode "default"
+        bindsym $mod+t mode "default"
 }
 
-bindsym $mod+r mode "resize"
+bindsym $mod+t mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -173,7 +173,7 @@ bar {
 
 # kbd
 
-bindsym $mod+l exec ranger
+bindsym $mod+r exec ranger
 
 # gaps
 

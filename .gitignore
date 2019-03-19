@@ -26,3 +26,4 @@
 
 // still ignore
 .vim/.netrwhist
+.vim/plugged

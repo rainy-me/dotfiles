@@ -13,3 +13,8 @@ set showmatch
 set incsearch
 set hlsearch
 
+call plug#begin('~/.vim/plugged')
+
+Plug 'leafgarland/typescript-vim'
+
+call plug#end()
