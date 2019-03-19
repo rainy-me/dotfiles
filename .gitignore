@@ -6,6 +6,9 @@
 !.bashrc
 !.bash_profile
 
+// zsh
+!.zshrc
+
 // some config files
 !/.config
 /.config/*
