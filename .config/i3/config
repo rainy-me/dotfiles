@@ -171,6 +171,10 @@ bar {
 
 # yue
 
+# kbd
+
+bindsym $mod+l exec ranger
+
 # gaps
 
 gaps outer 10 
@@ -179,3 +183,4 @@ gaps inner 10
 client.focused #87C0CD #87C0CD #ffffff #226597 #87C0CD 
 exec compton --config /home/yue/.config/i3/compton.conf -bc
 exec ~/.fehbg & 
+
