@@ -186,8 +186,8 @@ bar {
 
 # kbd
 
-bindsym $mod+r exec kitty -e ranger
-bindsym $mod+g exec firefox-nightly
+bindsym $mod+r exec --no-startup-id kitty -e ranger
+bindsym $mod+g exec --no-startup-id firefox-nightly
 bindsym Print exec "scrot -z 'screenshot-%Y-%m-%d-%H-%M-%S.png$' -e 'mv $f ~/pics/screenshots/'"
 bindsym $mod+Print exec "scrot -s -z 'screenshot-%Y-%m-%d-%H-%M-%S.png$' -e 'mv $f ~/pics/screenshots/'"
 
