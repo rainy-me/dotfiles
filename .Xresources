@@ -1,10 +1,10 @@
 !--------------------xdefauls
-URxvt.font: xft:Fira Mono:size=12,style=medium
-URxvt.boldFont: xft:Fira Mono:size=12,style=bold
+URxvt*font: xft:Fira Code:pixelsize=14,xft:DejaVu Sans:pixelsize=18
+URxvt*boldFont: xft:Fira Code:pixelsize=14,xft:DejaVu Sans:pixelsize=18
 urxvt*termName: rxvt
 urxvt*scrollBar: false 
 urxvt*matcher.button: 1
-URxvt.letterSpace: -1
+URxvt*letterSpace: 0 
 Xft*dpi: 96
 Xft*antialias: true
 Xft*hinting: true
