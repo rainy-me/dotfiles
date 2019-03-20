@@ -19,7 +19,7 @@ font pango:Fira Code 8
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
-
+default_border pixel 0
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # The font above is very space-efficient, that is, it looks good, sharp and
@@ -31,7 +31,9 @@ font pango:Fira Code 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec kitty
+
+focus_follows_mouse yes
 
 # kill focused window
 bindsym $mod+Delete kill
@@ -168,31 +170,34 @@ bindsym $mod+t mode "resize"
 
 # i3-rust 
 bar {
-    font pango:Fira Code, FontAwesome 12
+    font pango:Fira Code, FontAwesome 10
     position top
     status_command i3status-rs ~/.config/i3/status-rust.toml 
     i3bar_command i3bar -t
     colors{
         separator #666666
-        statusline #dddddd
-        focused_workspace #82acff #82acff #ffffff 
-        active_workspace #333333 #333333 #ffffff 
-        inactive_workspace #333333 #333333 #eeeeee 
+        statusline #eeeeee
+        focused_workspace #726a95 #726a95 #000000 
+        active_workspace #222222 #222222 #666666 
+        inactive_workspace #222222 #222222 #666666 
         urgent_workspace #2f343a #333333 #ffffff 
     }
 }
 
 # kbd
 
-bindsym $mod+r exec urxvt -e ranger
-bindsym $mod+g exec firefox
+bindsym $mod+r exec kitty -e ranger
+bindsym $mod+g exec firefox-nightly
+bindsym Print exec "scrot -z 'screenshot-%Y-%m-%d-%H-%M-%S.png$' -e 'mv $f ~/pics/screenshots/'"
+bindsym $mod+Print exec "scrot -s -z 'screenshot-%Y-%m-%d-%H-%M-%S.png$' -e 'mv $f ~/pics/screenshots/'"
 
 # gaps
 
 gaps outer 10 
 gaps inner 10
 
-client.focused #87C0CD #87C0CD #ffffff #226597 #87C0CD 
-exec --no-startup-id compton --config /home/yue/.config/i3/compton.conf -bc
+# client.focused #87c0cd #87c0cd #eeeeee #e44985 #87c0cd  
+
+exec --no-startup-id compton -bc
 exec --no-startup-id ~/.fehbg & 
 

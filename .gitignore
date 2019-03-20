@@ -1,32 +1,33 @@
-// Ignore all files by default
+# Ignore all files by default
 /*
 /.*
 
-// bash
+# bash
 !.bashrc
 !.bash_profile
 
-// zsh
+# zsh
 !.zshrc
 !.zprofile
-// some config files
+# some config files
 !/.config
 /.config/*
 !/.config/i3
 !/.config/ranger
 
 
-// git
+# git
 !.gitignore
 !.gitconfig
 
-// WM
+# WM
 !.Xresources
 
-// vim
+# vim
 !/.vim
 !.vimrc
 
-// still ignore
+# still ignore
 .vim/.netrwhist
 .vim/plugged
+
