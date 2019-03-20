@@ -7,6 +7,10 @@ bindkey -v
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/yue/.zshrc'
 
+# exports
+
+export EDITOR=/usr/bin/vim
+
 autoload -Uz compinit 
 # promptinit
 compinit

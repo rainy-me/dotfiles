@@ -15,6 +15,7 @@ set hlsearch
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'leafgarland/typescript-vim'
+    Plug 'leafgarland/typescript-vim'
+    Plug 'sheerun/vim-polyglot'
 
 call plug#end()

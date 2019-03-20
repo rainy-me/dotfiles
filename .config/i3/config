@@ -34,7 +34,7 @@ floating_modifier $mod
 bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+Delete kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
@@ -167,14 +167,16 @@ bindsym $mod+t mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status
+    position top
+    status_command i3status
 }
 
 # yue
 
 # kbd
 
-bindsym $mod+r exec ranger
+bindsym $mod+r exec urxvt -e ranger
+bindsym $mod+g exec firefox
 
 # gaps
 
@@ -182,6 +184,6 @@ gaps outer 10
 gaps inner 10
 
 client.focused #87C0CD #87C0CD #ffffff #226597 #87C0CD 
-exec compton --config /home/yue/.config/i3/compton.conf -bc
-exec ~/.fehbg & 
+exec --no-startup-id compton --config /home/yue/.config/i3/compton.conf -bc
+exec --no-startup-id ~/.fehbg & 
 
