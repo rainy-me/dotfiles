@@ -25,3 +25,5 @@ if (has("termguicolors"))
 endif
 
 colorscheme OceanicNext
+
+hi Normal guibg=NONE ctermbg=NONE
