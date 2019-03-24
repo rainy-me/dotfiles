@@ -10,6 +10,7 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod1
+set $term urxvt
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -31,8 +32,7 @@ default_border pixel 0
 floating_modifier $mod
 
 # start a terminal
-# bindsym $mod+Return exec kitty
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec $term
 
 focus_follows_mouse yes
 
@@ -40,7 +40,7 @@ focus_follows_mouse yes
 bindsym $mod+Delete kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+# bindsym $mod+d exec rofi -show drun
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -187,10 +187,15 @@ bar {
 
 # kbd
 
-bindsym $mod+r exec --no-startup-id kitty -e ranger
+bindsym $mod+r exec --no-startup-id $term -e ranger
 bindsym $mod+g exec --no-startup-id firefox-nightly
 bindsym Print exec "scrot -z 'screenshot-%Y-%m-%d-%H-%M-%S.png$' -e 'mv $f ~/pics/screenshots/'"
 bindsym $mod+Print exec "scrot -s -z 'screenshot-%Y-%m-%d-%H-%M-%S.png$' -e 'mv $f ~/pics/screenshots/'"
+
+## rofi
+bindsym $mod+d exec rofi -show drun
+bindsym $mod+Shift exec rofi -show window
+bindsym $mod+Shift+d exec rofi -show ssh
 
 # gaps
 
