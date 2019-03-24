@@ -11,19 +11,16 @@ set lazyredraw
 set showmatch
 set incsearch
 set hlsearch
-
+set t_Co=256
 call plug#begin('~/.vim/plugged')
 
     Plug 'leafgarland/typescript-vim'
     Plug 'sheerun/vim-polyglot'
     Plug 'mhartington/oceanic-next'
+    Plug 'rainy-me/curiosity'
 
 call plug#end()
 
-if (has("termguicolors"))
-    set termguicolors
-endif
-
-colorscheme OceanicNext
+colorscheme Curiosity
 
 hi Normal guibg=NONE ctermbg=NONE
