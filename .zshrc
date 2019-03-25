@@ -1,6 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-
+export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/.yarn/bin:$PATH
 # Path to your oh-my-zsh installation.
 ZSH=/usr/share/oh-my-zsh/
 
@@ -74,6 +75,7 @@ export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 export EDITOR='vim'
+export BROWSER='firefox-nightly'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
