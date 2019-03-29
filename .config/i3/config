@@ -10,7 +10,6 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod1
-set $term kitty #urxvt
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -32,7 +31,7 @@ default_border pixel 0
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec $term
+bindsym $mod+Return exec kitty
 
 focus_follows_mouse yes
 
@@ -187,15 +186,17 @@ bar {
 
 # kbd
 
-bindsym $mod+r exec --no-startup-id $term -e ranger
+bindsym $mod+r exec --no-startup-id "kitty -e ranger"
+bindsym F1 exec --no-startup-id xbacklight -dec 10
+bindsym F2 exec --no-startup-id xbacklight -inc 10
 bindsym $mod+g exec --no-startup-id firefox-nightly
-bindsym Print exec "scrot -z 'screenshot-%Y-%m-%d-%H-%M-%S.png$' -e 'mv $f ~/pics/screenshots/'"
-bindsym $mod+Print exec "scrot -s -z 'screenshot-%Y-%m-%d-%H-%M-%S.png$' -e 'mv $f ~/pics/screenshots/'"
+bindsym Print exec --no-startup-id "scrot -z 'screenshot-%Y-%m-%d-%H-%M-%S.png$' -e 'mv $f ~/pics/screenshots/'"
+bindsym $mod+Print exec --no-startup-id  "scrot -s -z 'screenshot-%Y-%m-%d-%H-%M-%S.png$' -e 'mv $f ~/pics/screenshots/'"
 
 ## rofi
-bindsym $mod+d exec rofi -show drun
-bindsym $mod+Shift exec rofi -show window
-bindsym $mod+Shift+d exec rofi -show ssh
+bindsym $mod+d exec --no-startup-id rofi -show drun
+bindsym $mod+Shift exec --no-startup-id rofi -show window
+bindsym $mod+Shift+d exec --no-startup-id rofi -show ssh
 
 # gaps
 
