@@ -12,6 +12,7 @@
 # zsh
 !.zshrc
 !.zprofile
+!.zsh_custom
 # some config files
 !/.config
 /.config/*
