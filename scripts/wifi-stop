@@ -1,0 +1,4 @@
+sudo echo;
+sudo pkill dhcpcd
+sudo pkill wpa_supplicant 
+

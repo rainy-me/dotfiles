@@ -37,6 +37,8 @@
 !/.vim
 !.vimrc
 
+# scripts
+!/scripts
 # still ignore
 .vim/.netrwhist
 .vim/plugged
