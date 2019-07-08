@@ -3,6 +3,10 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.yarn/bin:$PATH
 export PATH=$HOME/scripts:$PATH
+# go
+export GOPATH=$HOME/projects/go
+export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
+
 # Path to your oh-my-zsh installation.
 ZSH=/usr/share/oh-my-zsh/
 
