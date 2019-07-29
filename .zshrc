@@ -6,7 +6,7 @@ export PATH=$HOME/scripts:$PATH
 # go
 export GOPATH=$HOME/projects/go
 export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
-export PATH="$HOME/.cargo/bin:$PATH"
+export PATH=$HOME/.cargo/bin:$PATH
 # Path to your oh-my-zsh installation.
 ZSH=/usr/share/oh-my-zsh/
 
