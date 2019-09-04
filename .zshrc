@@ -7,6 +7,10 @@ export PATH=$HOME/scripts:$PATH
 export GOPATH=$HOME/projects/go
 export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
 export PATH=$HOME/.cargo/bin:$PATH
+#php
+export PATH=/bin/php/bin:$PATH
+export PATH=/bin/php/sbin:$PATH
+
 # Path to your oh-my-zsh installation.
 ZSH=/usr/share/oh-my-zsh/
 
