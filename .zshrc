@@ -10,6 +10,8 @@ export PATH=$HOME/.cargo/bin:$PATH
 #php
 export PATH=/bin/php/bin:$PATH
 export PATH=/bin/php/sbin:$PATH
+#ruby
+export PATH=$HOME/.gem/ruby/2.6.0/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 ZSH=/usr/share/oh-my-zsh/
