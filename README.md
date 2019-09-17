@@ -8,6 +8,6 @@
 + Shell: `zsh`
 + Text Editor: `vim`
 + File Manager: `ranger`
-+ Web Browser: `firefox-nightly`
++ Web Browser: `brave`
 + Input Method: `fcitx`
 + Compositor: `compton`
