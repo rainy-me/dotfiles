@@ -14,12 +14,12 @@ def update():
     devDependencies = pkg_json.get('devDependencies')
 
     if dependencies:
-        pkgs = list(dependencies.keys())
+        pkgs = [*dependencies]
         print("📦update dependencies: ", pkgs)
         os.system("yarn add " + " ".join(pkgs))
 
     if devDependencies:
-        pkgs = list(devDependencies.keys())
+        pkgs = [*devDependencies]
         print("⚙️update devDependencies: ", pkgs)
         os.system("yarn add -D " + " ".join(pkgs))
 
