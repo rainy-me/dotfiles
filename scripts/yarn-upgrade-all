@@ -20,7 +20,7 @@ def update():
 
     if devDependencies:
         pkgs = list(devDependencies.keys())
-        print("⚙️uupdate devDependencies: ", pkgs)
+        print("⚙️update devDependencies: ", pkgs)
         os.system("yarn add -D " + " ".join(pkgs))
 
 if __name__ == '__main__':
