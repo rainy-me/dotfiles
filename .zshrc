@@ -111,8 +111,10 @@ alias mkcd='foo(){mkdir -p "$1"; cd "$1"};foo '
 alias sass!='sass --watch scss:css --style compressed'
 alias wifi-menu='sudo wifi-menu'
 alias pacman='sudo pacman'
+alias docker='sudo docker'
 alias please='sudo'
 alias plz='sudo'
+alias cr='crystal'
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
