@@ -115,6 +115,7 @@ alias docker='sudo docker'
 alias please='sudo'
 alias plz='sudo'
 alias cr='crystal'
+alias py3='python3'
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
