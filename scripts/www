@@ -1,0 +1,2 @@
+#!/usr/bin/env bash 
+curl -I -s -o /dev/null -w "%{http_code}\n" www.google.com
