@@ -190,8 +190,8 @@ bindsym $mod+r exec --no-startup-id "kitty -e ranger"
 bindsym F1 exec --no-startup-id xbacklight -dec 10
 bindsym F2 exec --no-startup-id xbacklight -inc 10
 bindsym $mod+g exec --no-startup-id firefox-nightly
-bindsym Print exec --no-startup-id "scrot -z 'screenshot-%Y-%m-%d-%H-%M-%S.png' -e 'mv $f ~/pics/screenshots/'"
-bindsym $mod+Print exec --no-startup-id  "scrot -s -z 'screenshot-%Y-%m-%d-%H-%M-%S.png' -e 'mv $f ~/pics/screenshots/'"
+bindsym Print exec --no-startup-id "scrot -z 'screenshot-%Y-%m-%d-%H-%M-%S.png' -e 'mv $f ~/screenshots/'"
+bindsym $mod+Print exec --release 'kitty' #"scrot -s -z 'screenshot-%Y-%m-%d-%H-%M-%S.png' -e 'mv $f ~/screenshots/'"
 
 bindsym XF86AudioMute exec --no-startup-id amixer sset Master 0
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer sset Master 10-
