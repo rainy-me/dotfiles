@@ -1,0 +1,6 @@
+#!/bin/bash
+
+case $1 in 
+    "wifi") wifi-dhu;;
+    "atte") attendance $@;;
+esac
