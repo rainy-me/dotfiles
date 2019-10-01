@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+on(){
+    xrandr --output HDMI1 --auto --left-of LVDS1
+}
+
+off(){
+    xrandr --output HDMI1 --off
+}
+
+restore(){
+    ~/.fehbg & 
+}
+
+case $1 in
+    "off") off;;
+    *) on;;
+esac
+
+restore
