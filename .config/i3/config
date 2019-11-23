@@ -208,7 +208,7 @@ gaps inner 10
 
 # client.focused #87c0cd #87c0cd #eeeeee #e44985 #87c0cd  
 
-exec --no-startup-id compton -bc --shadow-exclude '!focused'
+exec --no-startup-id picom -bc --shadow-exclude '!focused'
 exec --no-startup-id ~/.fehbg & 
 exec --no-startup-id fcitx
 
