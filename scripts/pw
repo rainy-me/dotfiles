@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e;
-python3.7 $HOME/scripts/functions/pw.py $1 | xclip -i;
+python $HOME/scripts/functions/pw.py $1 | xclip -i;
 ret=$?
 
 if [ $ret -ne 0 ]; then 
