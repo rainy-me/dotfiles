@@ -123,4 +123,19 @@ if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
 fi
 
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/yue/.anaconda/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/yue/.anaconda/etc/profile.d/conda.sh" ]; then
+        . "/home/yue/.anaconda/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/yue/.anaconda/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
 source $ZSH/oh-my-zsh.sh
