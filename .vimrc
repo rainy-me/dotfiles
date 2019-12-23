@@ -18,7 +18,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'sheerun/vim-polyglot'
     Plug 'mhartington/oceanic-next'
     Plug 'rainy-me/curiosity'
-
+    Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 call plug#end()
 
 colorscheme Curiosity
