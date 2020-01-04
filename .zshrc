@@ -17,6 +17,8 @@ export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$ANDROID_HOME/tools:$PATH
 #flutter
 export PATH=$HOME/.flutter-sdk/bin:$PATH
+#dart
+export PATH=$HOME/.pub-cache/bin:$PATH
 # Path to your oh-my-zsh installation.
 ZSH=/usr/share/oh-my-zsh/
 
