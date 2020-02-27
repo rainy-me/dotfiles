@@ -11,7 +11,7 @@ export PATH=$HOME/.cargo/bin:$PATH
 export PATH=/bin/php/bin:$PATH
 export PATH=/bin/php/sbin:$PATH
 #ruby
-export PATH=$HOME/.gem/ruby/2.6.0/bin:$PATH
+export PATH=$HOME/.gem/ruby/2.7.0/bin:$PATH
 #andriod
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$ANDROID_HOME/tools:$PATH
