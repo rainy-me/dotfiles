@@ -21,6 +21,7 @@
 !/.config/kitty
 !/.config/alacritty
 !/.config/picom
+!/.config/dunst
 !/.config/fcitx
 /.config/fcitx/*
 !/.config/fcitx/config
