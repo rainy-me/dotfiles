@@ -19,6 +19,7 @@
 !/.config/i3
 !/.config/ranger
 !/.config/kitty
+!/.config/alacritty
 !/.config/picom
 !/.config/fcitx
 /.config/fcitx/*
