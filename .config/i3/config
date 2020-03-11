@@ -211,4 +211,4 @@ gaps inner 10
 exec --no-startup-id picom -bc --shadow-exclude '!focused'
 exec --no-startup-id ~/.fehbg & 
 exec --no-startup-id fcitx
-
+exec --no-startup-id dunst
