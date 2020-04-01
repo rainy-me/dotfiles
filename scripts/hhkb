@@ -1,0 +1,2 @@
+1 #!/usr/bin/env bash
+systemd-inhibit --what=handle-power-key --who=xmodmap_switch --why=hhkb --mode=block sleep 1000d &
