@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 on(){
-    xrandr --output HDMI1 --auto --left-of LVDS1
+    OPTION="${1:---left-of}"
+    xrandr --output HDMI1 --auto "$OPTION" LVDS1
 }
 
 off(){
@@ -14,7 +15,7 @@ restore(){
 
 case $1 in
     "off") off;;
-    *) on;;
+    *) on $1;;
 esac
 
 restore
