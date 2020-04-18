@@ -121,6 +121,8 @@ alias cat='bat'
 alias cr='crystal'
 alias py='python'
 alias py3='python3'
+alias R='R --quiet --no-save --no-restore-data'
+
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
