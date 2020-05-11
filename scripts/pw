@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e;
+python $HOME/scripts/functions/pw.py $1 | xclip -i;
+ret=$?
+
+if [ $ret -ne 0 ]; then
+    exit 1;
+else
+    echo "copied!";
+fi

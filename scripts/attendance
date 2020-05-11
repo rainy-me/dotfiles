@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# This is a workaround because yarn link doesn't link bin
+cd ~/projects/digicam-attendance/
+node ./dist/index.js $@

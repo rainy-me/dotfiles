@@ -1,0 +1,4 @@
+rofi.modi: window,drun,run,ssh
+rofi.font: Fira Code 12
+rofi.theme: Pop-Dark
+

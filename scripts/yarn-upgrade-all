@@ -1,0 +1,27 @@
+#! /usr/bin/env python3
+import json
+import os
+
+def update():
+    try:
+        with open('package.json', 'r') as f:
+            pkg_json = json.loads(f.read())
+    except:
+        print('error read package.json')
+        return
+
+    dependencies = pkg_json.get('dependencies')
+    devDependencies = pkg_json.get('devDependencies')
+
+    if dependencies:
+        pkgs = [*dependencies]
+        print("📦update dependencies: ", pkgs)
+        os.system("yarn add " + " ".join(pkgs))
+
+    if devDependencies:
+        pkgs = [*devDependencies]
+        print("⚙️update devDependencies: ", pkgs)
+        os.system("yarn add -D " + " ".join(pkgs))
+
+if __name__ == '__main__':
+    update()

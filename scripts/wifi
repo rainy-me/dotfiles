@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+sudo echo
+sudo python $HOME/scripts/functions/wifi

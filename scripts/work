@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+while true
+do
+    tmt $1
+    notify-send 'お疲れ様~' "End of $1 minutes. STAND UP!" -u critical
+done

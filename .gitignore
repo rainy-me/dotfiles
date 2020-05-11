@@ -1,6 +1,56 @@
+<<<<<<< HEAD
 /*
 /.*
 !.zshrc
 !.zprofile
 !.gitignore
 !.gitconfig
+=======
+# Ignore all files by default
+/*
+/.*
+
+# readme
+!README.md
+
+# bash
+!.bashrc
+!.bash_profile
+
+# zsh
+!.zshrc
+!.zprofile
+!.zsh_custom
+# some config files
+!/.config
+/.config/*
+!/.config/i3
+!/.config/ranger
+!/.config/kitty
+!/.config/alacritty
+!/.config/picom
+!/.config/dunst
+!/.config/fcitx
+/.config/fcitx/*
+!/.config/fcitx/config
+!/.config/rofi
+
+
+# git
+!.gitignore
+!.gitconfig
+
+# WM
+!.Xresources
+
+# vim
+!/.vim
+!.vimrc
+
+# scripts
+!/scripts
+# still ignore
+.vim/.netrwhist
+.vim/plugged
+
+>>>>>>> 44870a7e805633094f79d9bf9782bfa33111eea3

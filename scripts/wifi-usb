@@ -1,0 +1,4 @@
+# Wi-Fi
+sudo echo
+ip link
+dhcpcd enp0s20u2

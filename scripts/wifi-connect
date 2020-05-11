@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+sudo echo
+sudo wifi-stop
+sudo wpa_passphrase $1 $2 | sudo wpa_supplicant -B -i wlp3s0 -c /dev/stdin
+sudo dhcpcd wlp3s0
