@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-/*
-/.*
-!.zshrc
-!.zprofile
-!.gitignore
-!.gitconfig
-=======
 # Ignore all files by default
 /*
 /.*
@@ -53,4 +45,3 @@
 .vim/.netrwhist
 .vim/plugged
 
->>>>>>> 44870a7e805633094f79d9bf9782bfa33111eea3
