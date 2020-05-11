@@ -1,3 +1,4 @@
+ZSH_DISABLE_COMPFIX=true
 # mac
 export PATH="/usr/local/opt/icu4c/bin:$PATH"
 export PATH="/usr/local/opt/icu4c/sbin:$PATH"
@@ -24,7 +25,7 @@ export PATH=$HOME/.flutter-sdk/bin:$PATH
 #dart
 export PATH=$HOME/.pub-cache/bin:$PATH
 # Path to your oh-my-zsh installation.
-ZSH=/usr/share/oh-my-zsh/
+ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -148,3 +149,4 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 source $ZSH/oh-my-zsh.sh
+unalias g
