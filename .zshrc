@@ -1,17 +1,15 @@
-<<<<<<< HEAD
+# mac
 export PATH="/usr/local/opt/icu4c/bin:$PATH"
 export PATH="/usr/local/opt/icu4c/sbin:$PATH"
-export PATH=$PATH:$(go env GOPATH)/bin
-alias dev="cd /Users/yue/Desktop/dev"
-=======
+alias dev="cd $HOME/Desktop/dev"
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.yarn/bin:$PATH
 export PATH=$HOME/scripts:$PATH
 # go
-export GOPATH=$HOME/projects/go
-export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
+export GOPATH=$HOME/go
+export PATH=$PATH:$(go env GOPATH)/bin
 export PATH=$HOME/.cargo/bin:$PATH
 #php
 export PATH=/bin/php/bin:$PATH
@@ -150,4 +148,3 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 source $ZSH/oh-my-zsh.sh
->>>>>>> 44870a7e805633094f79d9bf9782bfa33111eea3
