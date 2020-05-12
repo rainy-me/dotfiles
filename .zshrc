@@ -127,6 +127,7 @@ alias cr='crystal'
 alias py='python'
 alias py3='python3'
 alias R='R --quiet --no-save --no-restore-data'
+alias c='pbpaste -Prefer txt | pbcopy; pbpaste; echo'
 
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
