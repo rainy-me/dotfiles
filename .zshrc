@@ -4,6 +4,7 @@ export PATH="/usr/local/opt/icu4c/bin:$PATH"
 export PATH="/usr/local/opt/icu4c/sbin:$PATH"
 alias dev="cd $HOME/Desktop/dev"
 alias desk="cd $HOME/Desktop"
+alias c="pbpaste -Prefer txt | pbcopy; pbpaste; echo"
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
