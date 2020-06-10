@@ -1,11 +1,18 @@
+ZSH_DISABLE_COMPFIX=true
+# mac
+export PATH="/usr/local/opt/icu4c/bin:$PATH"
+export PATH="/usr/local/opt/icu4c/sbin:$PATH"
+alias dev="cd $HOME/Desktop/dev"
+alias desk="cd $HOME/Desktop"
+alias c="pbpaste -Prefer txt | pbcopy; pbpaste; echo"
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.yarn/bin:$PATH
 export PATH=$HOME/scripts:$PATH
 # go
-export GOPATH=$HOME/projects/go
-export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
+export GOPATH=$HOME/go
+export PATH=$PATH:$(go env GOPATH)/bin
 export PATH=$HOME/.cargo/bin:$PATH
 #php
 export PATH=/bin/php/bin:$PATH
@@ -20,7 +27,7 @@ export PATH=$HOME/.flutter-sdk/bin:$PATH
 #dart
 export PATH=$HOME/.pub-cache/bin:$PATH
 # Path to your oh-my-zsh installation.
-ZSH=/usr/share/oh-my-zsh/
+ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -122,6 +129,7 @@ alias cr='crystal'
 alias py='python'
 alias py3='python3'
 alias R='R --quiet --no-save --no-restore-data'
+alias c='pbpaste -Prefer txt | pbcopy; pbpaste; echo'
 
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
@@ -144,3 +152,4 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 source $ZSH/oh-my-zsh.sh
+unalias g
