@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-curl https://raw.githubusercontent.com/tokyo-metropolitan-gov/covid19/development/data/daily_positive_detail.json | jq ".data | .[-1]"
+curl -s https://raw.githubusercontent.com/tokyo-metropolitan-gov/covid19/development/data/daily_positive_detail.json | jq ".data | .[-1]"
+
