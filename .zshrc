@@ -26,7 +26,11 @@ export PATH=$ANDROID_HOME/tools:$PATH
 export PATH=$HOME/.flutter-sdk/bin:$PATH
 #dart
 export PATH=$HOME/.pub-cache/bin:$PATH
+#n
+export N_PREFIX=$HOME/.n
+export PATH=$N_PREFIX/bin:$PATH
 # Path to your oh-my-zsh installation.
+
 ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load --- if set to "random", it will
