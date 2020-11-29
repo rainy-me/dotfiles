@@ -124,7 +124,7 @@ export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 export EDITOR='vim'
-export BROWSER='brave'
+export BROWSER='firefox-developer-edition'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
