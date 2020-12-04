@@ -1,0 +1,11 @@
+#! /usr/bin/env python3
+import subprocess
+import re
+
+def update():
+    result = subprocess.run('sensors', stdout=subprocess.PIPE)
+    regex = re.compile('Core.+\+(.+?)°C ')
+    print(f'{max(regex.findall(result.stdout.decode("utf-8")))}°C')
+
+if __name__ == '__main__':
+    update()
