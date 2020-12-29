@@ -1,0 +1,8 @@
+cargo-watch v7.5.0:
+    cargo-watch
+diesel_cli v1.4.1:
+    diesel
+hololive v0.1.2:
+    hololive
+tmt v0.1.2:
+    tmt

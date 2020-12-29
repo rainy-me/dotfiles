@@ -43,6 +43,9 @@
 !/scripts
 /scripts/private
 
+# installed info
+!/requirements
+
 # still ignore
 .vim/.netrwhist
 .vim/plugged

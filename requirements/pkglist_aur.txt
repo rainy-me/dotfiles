@@ -1,0 +1,8 @@
+davinci-resolve
+figma-linux
+geekbench
+lf
+minecraft-launcher
+rslsync
+slack-desktop
+zoom
