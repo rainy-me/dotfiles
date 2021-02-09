@@ -1,3 +1,4 @@
+bfg
 davinci-resolve
 figma-linux
 geekbench
@@ -5,4 +6,5 @@ lf
 minecraft-launcher
 rslsync
 slack-desktop
+visual-studio-code-insiders-bin
 zoom

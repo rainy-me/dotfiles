@@ -23,6 +23,7 @@ dmenu
 docker
 docker-compose
 dunst
+exa
 expac
 fakeroot
 fcitx
@@ -35,6 +36,7 @@ fcitx-table-other
 feh
 file
 findutils
+firefox
 firefox-developer-edition
 flatpak
 flex
@@ -64,6 +66,7 @@ mandoc
 mariadb
 mesa
 mesa-demos
+musl
 neofetch
 noto-fonts
 noto-fonts-emoji
@@ -75,6 +78,7 @@ openshot
 otf-ipafont
 pacman
 pamixer
+pandoc
 patch
 picom
 pkgconf
@@ -95,8 +99,10 @@ steam
 sudo
 telegram-desktop
 texinfo
+texlive-fontsextra
 tor
 torbrowser-launcher
+tree
 ttf-dejavu
 ttf-fira-code
 ttf-fira-sans
