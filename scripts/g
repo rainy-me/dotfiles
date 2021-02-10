@@ -1,0 +1,15 @@
+#! /usr/bin/env bash
+
+case $1 in
+    "a") shift; git add $@;;
+    "b") shift; git branch $@;;
+    "c") shift; git checkout $@;;
+    "m") shift; git merge $@;;
+    "s") shift; git status $@;;
+    "x") shift; git branch --show-current $@;;
+    "cm") git commit -m "$2";;
+    "cb") shift; git checkout -b $@;;
+    "db") shift; git branch -d $@;;
+    "pox") git push origin $(git branch --show-current);;
+    *) git $@;
+esac
