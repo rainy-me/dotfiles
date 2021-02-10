@@ -34,6 +34,7 @@
 
 # WM
 !.Xresources
+!.xinitrc
 
 # vim
 !/.vim
