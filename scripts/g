@@ -10,6 +10,8 @@ case $1 in
     "cm") git commit -m "$2";;
     "cb") shift; git checkout -b $@;;
     "db") shift; git branch -d $@;;
-    "pox") git push origin $(git branch --show-current);;
-    *) git $@;
+    "pom") shift; git push origin master $@;;
+    "pox") shift; git push origin $(git branch --show-current) $@;;
+    "dc") git diff --cached;;
+    *) git $@;;
 esac
